@@ -1,0 +1,76 @@
+/*Применяем стили к заголовку*/
+h1
+{
+    text-align: right;
+    font-size: 38px;
+    font-weight: bold;
+    color: orange;
+}
+/*Применяем стили к заглавным буквам*/
+p:first-letter
+{
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+}
+/*Применяем стили к выделиным (зелёным) словам*/
+em
+{
+    font-weight: bold;
+    background-color: green;
+    color: white;
+}
+
+/*Выделяем весь текст списка жирным*/
+.plants-list
+{
+    font-weight: bold;
+}
+/*Делаем 1-й заголовок жёлтым*/
+#allotment h2
+{
+    color: orange;
+}
+/*Делаем 2-й заголовок синим*/
+#warehouse h2
+{
+    color: blue;
+}
+/*Делаем список серым*/
+#allotment .fruits-list li
+{
+    font-weight: normal;
+    color: grey;
+}
+/*Делаем список зелёным*/
+#warehouse .fruits-list li
+{
+    font-weight: normal;
+    color: green;
+}
+/*Делаем список красным*/
+.plants-list .vegetables-list li
+{
+    font-weight: normal;
+    color: red;
+}
+
+/*Делаем выравнивание таблицы и жрность*/
+.students-table
+{
+    text-align: center;
+    font-weight: bold;
+}
+/*Делаем столбик с оценками студентов зелёным */
+.students-table tbody td:nth-child(1n+2)
+{
+    background-color: green;
+    color: white;
+}
+/*Делаем имена студентов оранжевыми (делаем переопределение выравнивания!?)*/
+.students-table tbody td:nth-child(1)
+{
+    text-align: left;
+    font-weight: normal;
+    color: orange;
+}

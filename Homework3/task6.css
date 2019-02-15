@@ -1,0 +1,76 @@
+/*Скрываем все чекбоксы с экрана*/
+input
+{
+    display: none;
+}
+
+/*Делаем названия цветными и нужного размера*/
+label[for="red"]
+{
+    color: red;
+    text-decoration: underline;
+    opacity: 0.5;
+}
+label[for="green"]
+{
+    color: green;
+    text-decoration: underline;
+    margin: 0px 20px 0px 20px;
+    opacity: 0.5;
+}
+label[for="blue"]
+{
+    color: blue;
+    text-decoration: underline;
+    margin-right: 20px;
+    opacity: 0.5;
+}
+/*Делаем названия выделенным*/
+#red:checked ~ label[for="red"], 
+#green:checked ~ label[for="green"],
+#blue:checked ~ label[for="blue"]
+{
+    opacity: 1;
+}
+
+/*Делаем исчезновение/появления "красного" при нажатии на чекбокс*/
+.red
+{
+    display: none;
+}
+#red:checked ~ .red
+{
+    display: inline;
+    background: red;
+    color: white;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+/*Делаем исчезновение/появления "зелёного" при нажатии на чекбокс*/
+.green
+{
+    display: none;
+}
+#green:checked ~ .green
+{
+    display: inline;
+    background: green;
+    color: white;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+/*Делаем исчезновение/появления "синего" при нажатии на чекбокс*/
+.blue
+{
+    display: none;
+}
+#blue:checked ~ .blue
+{
+    display: inline;
+    background: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 0px 5px;
+}

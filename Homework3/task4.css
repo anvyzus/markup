@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+a[href^="http"]
+{
+    color: #f70
+}
+
+a[href*='google']
+{
+    color: #666
+}
+
+a[href="http://maps.yandex.ru"]::after
+{
+    content: "\21F1";
+    position: absolute;
+    left: 150px;
+}
