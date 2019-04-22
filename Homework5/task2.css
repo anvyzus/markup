@@ -1,0 +1,99 @@
+/*Основной блок*/
+.best-value {
+    border: 4px solid rgb(238, 129, 41);
+    border-radius: 4px;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: auto;
+    width: 288px;
+}
+/*Шапка блока*/
+.best-value__head {
+    background-color: rgb(238, 129, 41);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 22px 0 23px 0;
+}
+/*Тело блока*/
+.best-value__body {
+    background-color: white;
+}
+/*Заголовок тела*/
+.best-value__title {
+    color: rgb(63, 64, 66);
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center;
+    margin: 25px 0;
+}
+/*Прайс тела*/
+.best-value__price {
+    margin: 0 auto 22px;
+    width: 165px;
+}
+.best-value__text {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.best-value__currency {
+    color: rgb(53, 73, 90);
+    font-size: 19px;
+    font-weight: bold;
+    vertical-align: 39px;
+}
+.best-value__cost {
+    color: rgb(53, 73, 90);
+    font-size: 72px;
+    font-weight: bold;
+}
+.best-value__duration {
+    color: rgb(53, 73, 90);
+    font-size: 18px;
+    vertical-align: -9px;
+}
+/*Список тела*/
+.best-value__list {
+    color: rgb(136, 140, 148);
+    font-size: 15px;
+    list-style-type: none;
+    margin: auto;
+    padding: 0 0 18px;
+    width: 259px;
+
+}
+/*Элементы списка*/
+.best-value__item {
+    background-color: rgb(237, 245, 253);
+    background-image: url(one.png);
+    background-position: 33px center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    margin: 1px;
+    padding: 10px 0 6px 0;
+    padding-left: 65px;
+}
+.best-value__item:nth-child(even) {
+    background-color: rgb(245, 245, 246);
+}
+/*Кнопка тела*/
+.best-value__button {
+    margin: 8px 0 43px 18px;
+    padding: 0;
+}
+.best-value__link {
+    background-color: rgb(238, 129, 41);
+    border-bottom: 3px solid;
+    border-color: rgb(179, 86, 11);
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 11px 77px;
+    text-decoration: none;
+}
+.best-value__link-active:active {
+    border-color: rgb(238, 129, 41);
+}

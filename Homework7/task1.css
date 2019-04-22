@@ -1,0 +1,33 @@
+.table {
+    color: rgba(0, 0, 0, 0);
+    font-family: 'Arial', sans-serif;
+    margin: auto;
+    text-align: justify;
+    text-shadow: 0 0 5px black;
+    text-transform: uppercase;
+    width: 20%;
+}
+.table .table__text::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+.table__text {
+    line-height: 10px;
+    text-align: justify;
+}
+.table__line {
+    border-bottom: 1px solid rgba(255, 0, 0, 0.3);
+}
+.table__text01 {font-size:4em;}
+.table__text02 {font-size:3em;}
+.table__text03 {font-size:2em;}
+.table__text04 {font-size:1.5em;}
+.table__text05 {font-size:1.3em;}
+.table__text06 {font-size:1.2em;}
+.table__text07 {font-size:1.1em;}
+.table__text08 {font-size:1.0em;}
+.table__text09 {font-size:0.9em;}
+.table__text10 {font-size:0.8em;}
+.table__text11 {font-size:0.7em;}
+.table__text12 {font-size:0.6em;}

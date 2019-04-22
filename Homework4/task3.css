@@ -1,0 +1,27 @@
+.pager {
+    text-align: center;
+}
+.pager li {
+    color: blueviolet;
+    display: inline-block;
+    font-family: 'Economica', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    list-style-type: none;
+    overflow: hidden;
+}
+.pager li a {
+    padding: 10px;
+    text-decoration: none;
+}
+.page-item {
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+}
+.page-item a:hover {
+    color: white;
+    background-color: blueviolet;
+}
+.page-first a:hover, .page-previous a:hover, .page-next a:hover, .page-last a:hover {
+    color: brown;
+}
