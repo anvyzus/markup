@@ -21,13 +21,6 @@
                 <a class="gallery__link" href="#"><img class="gallery__icon" src="icon_2.png" alt="icon" /></a>
             </div>
         </div>
-        <!-- старая версия
-        <div class="popup gallery__popup">
-            <div class="popup__container">
-                <img class="popup__image" src="img_1.png" alt="image" />
-                <a class="popup__link" href="javascript:f()"><img class="popup__icon" src="icon_3.png" alt="icon" /></a>
-            </div>
-        </div>-->
         <div class="gallery__item">
             <div class="gallery__picture">
                 <img class="gallery__image" src="pic_2.png" alt="picture" />
@@ -74,8 +67,8 @@
             </div>
         </div>
     </section>
-    <section class="aaa">
-        <div class="popup gallery__popup">
+    <section class="popup">
+        <div class="popup__wrapper">
             <div class="popup__container">
                 <img class="popup__image" src="img_1.png" alt="image" />
                 <a class="popup__link" href="javascript:f()"><img class="popup__icon" src="icon_3.png" alt="icon" /></a>
@@ -85,7 +78,7 @@
     <!--Вставляем кусочек скрипта-->
     <script type="text/javascript">
         function f(){
-        var ob=document.getElementsByClassName('aaa')[0];
+        var ob=document.getElementsByClassName('popup')[0];
         if (ob.style.display=='block') { ob.style.display='none'; }
             else { ob.style.display='block'; }
         }
