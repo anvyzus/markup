@@ -1,5 +1,5 @@
 body {
-    background-color: #454;
+    background-color: #444;
 }
 .header__title {
     color: white;
@@ -33,19 +33,33 @@ img {
 .gallery__link {
     display: none;
 }
-
-@media (max-width: 480px) {
+@media (max-width: 767px) {
     body {
         background-color: wheat;
     }
     .gallery {
-        max-width: 100%;
+        width: 100%;
     }
     .gallery__item {
         margin-bottom: 20px;
         padding: 0 10px;
     }
     img {
-        max-width: 100%;
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        background-color: wheat;
+    }
+    .gallery {
+        width: 100%;
+    }
+    .gallery__item {
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+    img {
+        width: 100%;
     }
 }
