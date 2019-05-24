@@ -35,7 +35,17 @@ img {
 }
 
 @media (max-width: 480px) {
+    body {
+        background-color: wheat;
+    }
     .gallery {
+        max-width: 100%;
+    }
+    .gallery__item {
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+    img {
         max-width: 100%;
     }
 }
