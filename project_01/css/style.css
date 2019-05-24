@@ -1,17 +1,12 @@
 body {
-    background-color: #f6f9f9;
+    background-color: #444;
 }
 .header__title {
+    color: white;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    font-size: 50px;
-    text-transform: uppercase;
-    background: linear-gradient(135deg, red, blueviolet, blue, aqua);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #0B2349;
-    display: table;
-    margin: 20px auto;
+    font-weight: 300;
     text-align: center;
+    text-transform: uppercase;
 }
 .main {
     outline: 1px solid green;
@@ -37,4 +32,23 @@ img {
 }
 .gallery__link {
     display: none;
+}
+
+@media (max-width: 375px) {
+    body {
+        background-color: wheat;
+    }
+    .header__title {
+    color: black;
+    }
+    .gallery {
+        width: 100%;
+    }
+    .gallery__item {
+        margin-bottom: 20px;
+        padding: 0px;
+    }
+    img {
+        width: 100%;
+    }
 }
