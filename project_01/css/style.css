@@ -1,0 +1,31 @@
+.header__title {
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.main {
+    outline: 1px solid green;
+}
+.gallery {
+    outline: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    max-width: 960px;
+}
+.gallery__item {
+    outline: 1px solid blueviolet;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+img {
+    object-fit: cover;
+    display: block;
+    height: 300px;
+    width: 300px;
+}
+.gallery__link {
+    display: none;
+}
