@@ -1,8 +1,8 @@
 body {
-    background-color: #f6f9f9;
+    background-color: #444;
 }
 .header__title {
-    color: blue;
+    color: white;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     font-weight: 300;
     text-align: center;
@@ -32,4 +32,10 @@ img {
 }
 .gallery__link {
     display: none;
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        max-width: 100%;
+    }
 }
