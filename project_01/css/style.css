@@ -34,7 +34,7 @@ img {
     display: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 375px) {
     body {
         background-color: wheat;
     }
