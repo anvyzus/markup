@@ -39,10 +39,10 @@ img {
         background-color: wheat;
     }
     .header__title {
-    color: black;
+    color: red;
     }
     .gallery {
-        width: 100%;
+        width: 100vw;
     }
     .gallery__item {
         margin-bottom: 20px;
