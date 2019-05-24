@@ -52,4 +52,9 @@ img {
         height: 100%;
         width: 100%;
     }
+    img:before {
+    content: "";
+    padding-top: 100%;
+    float: left;
+}
 }
