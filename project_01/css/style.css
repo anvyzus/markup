@@ -38,6 +38,9 @@ img {
     body {
         background-color: wheat;
     }
+    .header__title {
+    color: black;
+    }
     .gallery {
         width: 100%;
     }
