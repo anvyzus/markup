@@ -42,14 +42,10 @@ img {
     color: red;
     }
     .gallery {
-        width: 100%;
+        max-width: 100%;
     }
     .gallery__item {
         margin-bottom: 20px;
         padding: 0px;
-    }
-    img {
-        height: 300px;
-        width: 100%;
     }
 }
