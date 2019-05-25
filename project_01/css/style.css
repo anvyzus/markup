@@ -49,7 +49,7 @@ img {
     margin-bottom: 20px;
   }
 }
-@media only screen and (width: 375px) and (orientation: landscape) {
+@media only screen and (width: 667px) and (orientation: landscape) {
   body {
     background-color: wheat;
   }
