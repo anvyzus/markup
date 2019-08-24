@@ -172,18 +172,22 @@ body {
         justify-content: center;
         margin-left: 10px;
         margin-right: 10px;
+        text-align: center;
     }
     .banner__title {
         font-size: 57px;
-        margin: 0 auto 50px;
+        margin: 0 auto 40px;
         max-width: 320px;
     }
     .banner__icon {
         height: 58px;
         width: 58px;
     }
+    .banner__text{
+        text-align: center;
+    }
     .banner__button {
-        margin: 54px auto 0;
+        margin: 64px auto 0;
     }
 }
 
