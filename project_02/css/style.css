@@ -1,3 +1,6 @@
+body {
+    min-width: 375px;
+}
 .wrapper {
     max-width: 1100px;
     margin: 0 auto;
@@ -143,7 +146,7 @@
 .banner__text {
     /*outline: 1px solid #f0f;*/
     font-size: 20px;
-    margin: 20px 0 0 0;
+    margin: 0;
     max-width: 425px;
 }
 .banner__button {
@@ -160,6 +163,9 @@
     }
 }
 @media screen and (max-width: 500px) {
+    .banner {
+        background-attachment: inherit;
+    }
     .banner__inner {
         display: flex;
         flex-direction: column;
@@ -169,9 +175,26 @@
     }
     .banner__title {
         font-size: 57px;
-        margin-bottom: 30px;
+        margin: 0 auto 50px;
+        max-width: 320px;
+    }
+    .banner__icon {
+        height: 58px;
+        width: 58px;
     }
     .banner__button {
         margin: 54px auto 0;
     }
+}
+
+/*Suggestions*/
+.suggestions-form {
+    outline: 1px solid #000;
+    font-family: 'Montserrat', sans-serif;
+}
+.suggestion-form__title{
+    font-size: 36px;
+    font-weight: 700px;
+    margin: 0;
+    text-align: center;
 }
