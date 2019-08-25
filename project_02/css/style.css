@@ -193,12 +193,58 @@ body {
 
 /*Suggestions*/
 .suggestions-form {
-    outline: 1px solid #000;
     font-family: 'Montserrat', sans-serif;
+    padding-top: 89px;
+}
+.suggestions-form__inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .suggestion-form__title{
     font-size: 36px;
     font-weight: 700px;
-    margin: 0;
+    margin: 0 0 29px;
     text-align: center;
+}
+.suggestions-form__suggestion {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+.suggestion__icon {
+    align-self: flex-start;
+}
+.suggestion__icon--margin {
+    margin: 24px 0 0;
+}
+.suggestion__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 25px 0 0;
+}
+.suggestion__text {
+    font-size: 18px;
+}
+@media screen and (max-width: 1065px) {
+    .suggestions-form__inner{
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width: 500px) {
+    .suggestions-form__suggestion {
+        width: 340px;
+    }
+    .suggestion__icon {
+        align-self: center;
+    }
+    .suggestion__icon--margin {
+        margin: 0;
+    }
+    .suggestion__title {
+        text-align: center;
+    }
+    .suggestion__text {
+        text-align: center;
+    }
 }
