@@ -8,7 +8,6 @@ body {
 
 /*Header*/
 .header {
-    /*outline: 1px solid #000;*/
     display: flex;
     flex-wrap: wrap;
     font-family: 'Montserrat', sans-serif;
@@ -248,3 +247,86 @@ body {
         text-align: center;
     }
 }
+
+/*Offers*/
+.offers-form {
+    outline: 1px solid black;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 89px;
+}
+.offers-form__title {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+}
+.offers-form__text {
+    outline: 1px solid brown;
+    font-size: 24px;
+    margin: 29px auto 77px;
+    max-width: 540px;
+    text-align: center;
+}
+.offers-form__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.offers-form__offer {
+    outline: 1px solid #f00;
+    display: flex;
+    justify-content: flex-end;
+    width: 445px;
+}
+.offer__icon {
+    align-self: flex-start;
+    margin-right: 15px;
+}
+.offer__inner {
+    outline: 1px solid #f0f;
+    width: 350px;
+}
+.offer__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 12px;
+}
+.offer__text {
+    font-size: 18px;
+    margin: 0 0 46px;
+}
+@media screen and (max-width: 905px) {
+    .offers-form__inner {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 500px) {
+    .offers-form__offer {
+        flex-direction: column;
+        align-items: center;
+        max-width: 375px;
+    }
+    .offer__inner {
+        max-width: 350px;
+    }
+    .offer__icon {
+        align-self:center;
+        margin-right: 0;
+    }
+}
+/*
+@media screen and (max-width: 500px) {
+    .offers-form__offer {
+        flex-wrap: wrap;
+        max-width: 445px;
+        
+    }
+    .offer__inner {
+        max-width: 350px;
+    }
+}
+@media screen and (max-width: 455px) {
+    .offers-form__offer {
+        justify-content: center;
+    }
+}*/
