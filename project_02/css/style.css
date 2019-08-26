@@ -370,7 +370,26 @@ body {
 .comment__text {
     font-size: 18px;
     line-height: 26px;
-    margin: 0 0 13px;
+    margin: 0;
+}
+.comment__text::before {
+    content: "";
+    background-image: url(../img/opening_quotes.png);
+    display: block;
+    height: 19px;
+    position: relative;
+    top: -10px;
+    width: 21px;
+}
+.comment__text::after {
+    content: "";
+    background-image: url(../img/closing_quotes.png);
+    display: block;
+    left: 300px;
+    position: relative;
+    top: -10px;
+    height: 19px;
+    width: 21px;
 }
 @media screen and (max-width: 905px) {
     .reviews-form__inner{
