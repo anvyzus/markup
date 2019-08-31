@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: url(../img/header_banner.png) no-repeat top;
+}
+.header {
+    outline: 1px solid blueviolet;
+    display: flex;
+    justify-content: flex-end;
+    height: 883px;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+.header__about {
+    background-color: #f3f9ff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.80);
+    height: 519px;
+    width: 372px;
+}
+.header__order-form {
+    background-color: royalblue;
+    border: 7px solid #a8ca3f;
+    border-radius: 7px;
+    height: 539px;
+    margin-left: 28px;
+    width: 256px;
+}
+.main {
+    outline: 1px solid red;
+    height: 883px;
+    margin: 0 auto;
+    max-width: 1170px;
+}
