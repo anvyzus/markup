@@ -348,11 +348,7 @@
     display: none;
   }
 
-
-  /*my*/
-  html {
-    box-sizing: border-box; 
-  }
-  * {
-    box-sizing: inherit;
-  }
+/*my*/
+* {
+  box-sizing: border-box;
+}
