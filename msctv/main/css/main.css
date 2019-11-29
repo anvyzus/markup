@@ -1,0 +1,223 @@
+/*Normalize*/
+html {
+    box-sizing: border-box;
+    line-height: 1.15;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+/*Header*/
+.header {
+    border-bottom: 1px solid #888;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px;
+}
+.header__button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    outline: none;
+    padding: 0;
+}
+.header__line {
+    background-color: #000;
+    display: block;
+    height: 3px;
+    margin: 4px 0;
+    transition: 0.4s;
+    width: 30px;
+}
+.change .header__line--position-top {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+.change .header__line--position-middle {
+    opacity: 0;
+}
+.change .header__line--position-bottom {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+.menu__list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 24px 0;
+}
+.menu__item {
+    margin-right: 30px;
+    text-transform: uppercase;
+}
+.menu__link {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.6;
+    text-decoration: none;
+    transition: 0.4s;
+    white-space: nowrap;
+}
+.menu__link:hover {
+    border-bottom: 4px solid;
+    color: #2F7BED;
+    opacity: 1;
+    padding-bottom: 21px;
+}
+.header__phone-icon {
+    height: 19px;
+    vertical-align: text-bottom;
+}
+.header__link {
+    color: #000;
+    font-size: 16px;
+    font-weight: 800;
+    opacity: 0.6;
+    padding: 24px 0;
+    text-decoration: none;
+    transition: 0.4s;
+    white-space: nowrap;
+}
+.header__link:hover {
+    opacity: 1;
+}
+@media only screen and (max-width: 1366px) {
+    .header {
+        padding: 0 80px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .header {
+        padding: 0 60px;
+        position: relative;
+    }
+    .header__button {
+        display: block;
+    }
+    .menu {
+        background-color: #333;
+        display: none;
+        left: 0;
+        padding-left: 60px;
+        position: absolute;
+        top: 68px;
+        width: 100%;
+    }
+    .menu__list {
+        flex-direction: column;
+    }
+    .menu__item {
+        margin: 15px 0;
+    }
+    .menu__link {
+        color: #FFF;
+        opacity: 1;
+    }
+    .menu__link:hover {
+        padding-bottom: 11px;
+    }
+    .header__link {
+        opacity: 1;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 0 20px;
+    }
+    .menu {
+        padding-left: 20px;
+    }
+}
+
+/*Banner*/
+.banner {
+    align-items: center;
+    display: flex;
+    padding: 200px;
+}
+.banner__logo {
+    margin-right: 50px;
+    width: 250px;
+}
+.banner__title {
+    color: #2F7BED;
+    font-size: 75px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    white-space: pre-line;
+}
+.banner__title--width-light {
+    font-size: 40px;
+    font-weight: 300;
+}
+@media only screen and (max-width: 1366px) {
+    .banner {
+        padding: 80px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .banner {
+        padding: 80px 60px;
+    }
+    .banner__logo {
+        margin-right: 25px;
+        width: 200px;
+    }
+    .banner__title {
+        font-size: 55px;
+    }
+    .banner__title--width-light {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    .banner__logo {
+        margin-right: 15px;
+        width: 150px;
+    }
+    .banner__title {
+        font-size: 45px;
+        text-align: center;
+    }
+    .banner__title--width-light {
+        font-size: 25px;
+    }
+}
+
+.offer {
+    background-image: -webkit-linear-gradient(-86deg, #7121ff 0%, #21d4fd 100%);
+    margin: 0;
+    min-height: 150vh;
+}
+/*.header {
+    margin: 0;
+    height: 0;
+}
+.banner {
+    background-image: -webkit-linear-gradient(-86deg, #7121ff 0%, #21d4fd 100%);
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+}
+.banner__background {
+    bottom: 0;
+    max-height: 400px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.about {
+    background-image: -webkit-linear-gradient(-86deg, #f00101 0%, #f001a8 100%);
+    min-height: 100vh;
+}
+@media screen and (max-width: 768px) {
+    .banner__background {
+        width: 160%;
+    }
+} */
