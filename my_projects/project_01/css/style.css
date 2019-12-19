@@ -1,0 +1,651 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/*Блок хедер*/
+header {
+    font-family: 'Open Sans', sans-serif;
+    height: 116px;
+    margin: auto;
+    overflow: hidden;
+    width: 1023px;
+}
+/*Заголовок хедера*/
+.header__title {
+    color: #3070a8;
+    float: left;
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: 33px;
+}
+.header__title--orange {
+    color: #ee8129;
+}
+/*Меню хедера*/
+.menu__list {
+    float: right;
+    margin-top: 58px;
+}
+.menu__item {
+    display: inline-block;
+    list-style-type: none;
+}
+.menu__link {
+    color: #989898;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 41px;
+    text-decoration: none;
+    transition: .3s;
+}
+.menu__link:hover {
+    color: #3070a8;
+    padding-bottom: 33px;
+    border-bottom: 4px solid #3070a8;
+}
+/*Блок банер*/
+.banner {
+    font-family: 'Open Sans', sans-serif;
+    background: url(../img/banner.png) no-repeat;
+    background-size: 100%;
+    height: 560px;
+}
+.banner__item {
+    margin: auto;
+    width: 1023px;    
+}
+.banner__text {
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+.banner__introduction {
+    font-size: 36px;
+    padding-top: 153px;
+}
+.banner__header {
+    font-size: 48px;
+    text-transform: uppercase;
+    max-width: 800px;
+}
+.banner__conclusion {
+    font-size: 20px;
+    font-style: italic;
+    max-width: 700px;
+    margin-bottom: 46px;
+}
+/*Кнопка блока*/
+.banner__button {
+    border: 1px solid #808080;
+    border-radius: 1px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 380px;
+    padding: 23px 63px;
+    text-decoration: none;
+    transition: .5s;
+}
+.banner__button:hover {
+    background: rgba(118, 118, 118, 0.4);
+}
+
+/*Блок сервисы*/
+.services {
+    height: 563px;
+    margin: 0 auto;
+    width: 1023px;
+}
+/*Заголовок блока сервисы*/
+.services__header {
+    color: #41525c;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 39px 0 19px;
+    text-align: center;
+    text-transform: uppercase;
+}
+/*3 блока основного блока*/
+.services__wrapper {
+    display: inline-block;
+    width: 304px;
+}
+.services__alert {
+    margin: 50px;
+}
+.services__image {
+    display: block;
+    margin: 0 auto;
+}
+.services__title {
+    color: #3070a8;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+.services__text {
+    color: #999999;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+/*Блок средний*/
+.middle {
+    background: url(../img/middle.png) no-repeat;
+    background-size: 100%;
+    border-top: 1px solid white; /*для того, что бы убрать отступ*/
+    height: 555px;
+    margin: 0;
+    vertical-align: middle;
+}
+.middle__wrapper {
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    width: 1023px;
+}
+.middle__header {
+    color: #ee8129;
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 90px;
+    max-width: 720px;
+    text-transform: uppercase;
+}
+.middle__title {
+    color: white;
+    font-size: 19px;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 20px;
+    max-width: 720px;
+}
+.middle__item {
+    color: #9d9d9d;
+    font-size: 14px;
+    line-height: 2em;
+    margin-top: 20px;
+    max-width: 620px;
+}
+.middle__item--blue {
+    color: #3070a8;
+}
+
+/*Контейнер, для центрирования*/
+.container {
+    margin: auto;
+    height: 600px;
+    width: 900px;
+}
+
+/*Титульный заголовок*/
+.container__title {
+    color: rgb(65, 82, 95);
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 33px 0 37px;
+    text-align: center;
+}
+
+/*Основной блок "standard"*/
+.standard {
+    border: 1px solid rgb(232, 234, 236);
+    border-right: 0px;
+    border-radius: 4px 0 0 4px;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: auto;
+    width: 288px;
+    display: inline-block;
+}
+/*Шапка блока*/
+.standard__head {
+    background-color: rgb(55, 194, 211);
+    border-radius: 4px 0 0 0;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0 15px 0;
+}
+/*Тело блока*/
+.standard__body {
+    background-color: white;
+}
+/*Заголовок тела*/
+.standard__title {
+    color: rgb(63, 64, 66);
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center;
+    margin: 25px 0;
+}
+/*Прайс тела*/
+.standard__price {
+    margin: 0 auto 22px;
+    width: 165px;
+}
+.standard__text {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.standard__currency {
+    color: rgb(53, 73, 90);
+    font-size: 19px;
+    font-weight: bold;
+    vertical-align: 39px;
+}
+.standard__cost {
+    color: rgb(53, 73, 90);
+    font-size: 72px;
+    font-weight: bold;
+}
+.standard__duration {
+    color: rgb(53, 73, 90);
+    font-size: 18px;
+    vertical-align: -9px;
+}
+/*Список тела*/
+.standard__list {
+    color: rgb(136, 140, 148);
+    font-size: 15px;
+    list-style-type: none;
+    margin: auto;
+    padding: 0 0 18px;
+    width: 259px;
+
+}
+/*Элементы списка*/
+.standard__item {
+    background-color: rgb(237, 245, 253);
+    background-image: url(../img/one.png);
+    background-position: 33px center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    margin: 1px;
+    padding: 10px 0 6px 0;
+    padding-left: 65px;
+}
+.standard__item:nth-child(even) {
+    background-color: rgb(245, 245, 246);
+}
+/*Кнопка тела*/
+.standard__button {
+    margin: 8px 0 33px 18px;
+    padding: 0;
+}
+.standard__link {
+    background-color: rgb(51, 113, 166);
+    border-bottom: 3px solid;
+    border-color: rgb(22, 67, 106);
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 11px 77px;
+    text-decoration: none;
+}
+.standard__link-active:active {
+    border-color: rgb(51, 113, 166);
+}
+
+/*Основной блок "best-value"*/
+.best-value {
+    border: 4px solid rgb(238, 129, 41);
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 4px rgb(205, 226, 238, 0.5);
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0 -4px;
+    width: 288px;
+    display: inline-block;
+}
+/*Шапка блока*/
+.best-value__head {
+    background-color: rgb(238, 129, 41);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 22px 0 23px 0;
+}
+/*Тело блока*/
+.best-value__body {
+    background-color: white;
+}
+/*Заголовок тела*/
+.best-value__title {
+    color: rgb(63, 64, 66);
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center;
+    margin: 25px 0;
+}
+/*Прайс тела*/
+.best-value__price {
+    margin: 0 auto 22px;
+    width: 165px;
+}
+.best-value__text {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.best-value__currency {
+    color: rgb(53, 73, 90);
+    font-size: 19px;
+    font-weight: bold;
+    vertical-align: 39px;
+}
+.best-value__cost {
+    color: rgb(53, 73, 90);
+    font-size: 72px;
+    font-weight: bold;
+}
+.best-value__duration {
+    color: rgb(53, 73, 90);
+    font-size: 18px;
+    vertical-align: -9px;
+}
+/*Список тела*/
+.best-value__list {
+    color: rgb(136, 140, 148);
+    font-size: 15px;
+    list-style-type: none;
+    margin: auto;
+    padding: 0 0 18px;
+    width: 259px;
+}
+/*Элементы списка*/
+.best-value__item {
+    background-color: rgb(237, 245, 253);
+    background-image: url(../img/one.png);
+    background-position: 33px center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    margin: 1px;
+    padding: 10px 0 6px 0;
+    padding-left: 65px;
+}
+.best-value__item:nth-child(even) {
+    background-color: rgb(245, 245, 246);
+}
+/*Кнопка тела*/
+.best-value__button {
+    margin: 8px 0 43px 18px;
+    padding: 0;
+}
+.best-value__link {
+    background-color: rgb(238, 129, 41);
+    border-bottom: 3px solid;
+    border-color: rgb(179, 86, 11);
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 11px 77px;
+    text-decoration: none;
+}
+.best-value__link-active:active {
+    border-color: rgb(238, 129, 41);
+}
+
+/*Основной блок "ultimate"*/
+.ultimate {
+    border: 1px solid rgb(232, 234, 236);
+    border-left: 0px;
+    border-radius: 0 4px 4px 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: auto;
+    width: 288px;
+    display: inline-block;
+}
+/*Шапка блока*/
+.ultimate__head {
+    background-color: rgb(28, 183, 154);
+    border-radius: 0 4px 0 0;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0 15px 0;
+}
+/*Тело блока*/
+.ultimate__body {
+    background-color: white;
+}
+/*Заголовок тела*/
+.ultimate__title {
+    color: rgb(63, 64, 66);
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center;
+    margin: 25px 0;
+}
+/*Прайс тела*/
+.ultimate__price {
+    margin: 0 auto 22px;
+    width: 165px;
+}
+.ultimate__text {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.ultimate__currency {
+    color: rgb(53, 73, 90);
+    font-size: 19px;
+    font-weight: bold;
+    vertical-align: 39px;
+}
+.ultimate__cost {
+    color: rgb(53, 73, 90);
+    font-size: 72px;
+    font-weight: bold;
+}
+.ultimate__duration {
+    color: rgb(53, 73, 90);
+    font-size: 18px;
+    vertical-align: -9px;
+}
+/*Список тела*/
+.ultimate__list {
+    color: rgb(136, 140, 148);
+    font-size: 15px;
+    list-style-type: none;
+    margin: auto;
+    padding: 0 0 18px;
+    width: 259px;
+
+}
+/*Элементы списка*/
+.ultimate__item {
+    background-color: rgb(237, 245, 253);
+    background-image: url(../img/one.png);
+    background-position: 33px center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    margin: 1px;
+    padding: 10px 0 6px 0;
+    padding-left: 65px;
+}
+.ultimate__item:nth-child(even) {
+    background-color: rgb(245, 245, 246);
+}
+/*Кнопка тела*/
+.ultimate__button {
+    margin: 8px 0 33px 18px;
+    padding: 0;
+}
+.ultimate__link {
+    background-color: rgb(51, 113, 166);
+    border-bottom: 3px solid;
+    border-color: rgb(22, 67, 106);
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 11px 77px;
+    text-decoration: none;
+}
+.ultimate__link-active:active {
+    border-color: rgb(51, 113, 166);
+}
+
+/*Основной блок*/
+.testimonials {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-image: url(../img/background.png);
+    background-size: 100%;
+    padding: 30px 160px;
+}
+.testimonials__wrapper {
+    margin: auto;
+    width: 1023px;
+}
+/*Титульный заголовок*/
+.testimonials__title {
+    color: #3170a8;
+    font-size: 30px;
+    text-align: center;
+    padding: 0 0 30px;
+}
+.testimonials__title_color {
+    color: #ee8129;
+}
+/*Блоки с отзывами*/
+.testimonial {
+    display: inline-block;
+    margin: 0 0px 10px;
+    vertical-align: top;
+    width: 500px;
+    
+    
+}
+/*Фото пользователя*/
+.testimonial__image {
+    margin-right: 26px;
+    float: left;
+}
+/*Блок первый*/
+.testimonial__field::before {
+    content: ''; 
+    position: absolute;
+    top: 30px;
+    left: -37px;
+    border: 22px solid transparent;
+    border-right: 15px solid white;
+}
+.testimonial__field {
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    width: 362px;
+}
+.testimonial__header {
+    color: #666666;
+    border-bottom: 1px dashed;
+    margin: 13px;
+    overflow: hidden;
+    padding: 0 0 9px;
+}
+.testimonial__user::before {
+    content: '- ';
+}
+.testimonial__user {
+    color: #3070a8;
+    font-size: 13px;
+    font-style: italic;
+    float: left;
+    margin-left: 14px;
+    max-width: 150px;
+    text-decoration: none;
+}
+.testimonial__status {
+    color: #3070a8;
+    font-size: 13px;
+    font-style: italic;
+    float: right;
+    margin-right: 21px;
+    max-width: 150px;
+    text-decoration: none;
+}
+.testimonial__text {
+    color: #666666;
+    font-size: 13px;
+    margin: 0 13px 7px;
+}
+/*Блок футер*/
+.footer {
+    border-top: 1px solid;
+    position: relative;
+}
+.footer__wrapper {
+    border-top: 1px solid white;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    height: 345px;
+    width: 1023px;
+}
+.footer__map {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background: url(../img/map.png) no-repeat;
+    margin: 0;
+    height: 345px;
+    width: 675px;
+}
+.footer__social {
+    display: inline-block;
+    padding-left: 40px;
+}
+.footer__item-address {
+    list-style: none;
+    background-image: url(../img/address.png);
+    background-position: 0px top;
+    background-repeat: no-repeat;
+    padding-left: 60px;
+}
+.footer__item-phone {
+    list-style: none;
+    background-image: url(../img/phone.png);
+    background-position: 5px top;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    padding-left: 60px;
+    margin: 20px 0;
+}
+.footer__item-mail {
+    list-style: none;
+    background-image: url(../img/mail.png);
+    background-position: 1px top;
+    background-repeat: no-repeat;
+    padding-left: 60px;
+}
+.footer__link {
+    display: inline-block;
+    margin-right: 15px;
+}
+/*Футер копирайт блок*/
+.footer__copyright {
+    color: white;
+    border: 1px solid #3070a8;
+    background-color: #3070a8;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    height: 104px;
+    margin: 0;
+    padding-top: 15px;
+    text-align: center;
+}
+.footer__text--black {
+    color: black;
+    font-weight: 700;
+}
