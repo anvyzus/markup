@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap&subset=cyrillic" rel="stylesheet" />
 </head>
 <body class="page">
-    <header class="header page__header">
+    <header class="header page__header" id="header">
         <div class="header__inner-wrapper">
             <button class="button header__menu-button">
                 <span class="header__line header__line--position-top"></span>
@@ -19,26 +19,31 @@
             <nav class="menu header__menu">
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Главная</a>
+                        <a class="menu__link" href="#header">Главная</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Спутниковое ТВ</a>
+                        <a class="menu__link" href="#satellite">Спутниковое ТВ</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Цифровое ТВ</a>
+                        <a class="menu__link" href="#digital">Цифровое ТВ</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Ремонт</a>
+                        <a class="menu__link" href="#service">Ремонт</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Контакты</a>
+                        <a class="menu__link" href="#footer">Контакты</a>
                     </li>
                 </ul>
             </nav>
             <a class="header__link" href="tel:+79051894760">+7 905 189 47 60</a>
         </div>
     </header>
-    <main class="main page__main"></main>
+    <main class="main page__main">
+        <article class="satellite" id="satellite">satellite</article>
+        <article class="digital" id="digital">digital</article>
+        <article class="service" id="service">service</article>
+    </main>
+    <footer class="footer" id="footer">footer</footer>
     
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/parallax.min.js"></script>
