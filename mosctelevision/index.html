@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap&subset=cyrillic" rel="stylesheet" />
 </head>
 <body class="page">
-    <header class="header page__header" id="header">
+    <header class="header page__header scroll" id="header">
         <div class="header__inner-wrapper">
             <button class="button header__menu-button">
                 <span class="header__line header__line--position-top"></span>
@@ -37,16 +37,19 @@
             </nav>
             <a class="header__link" href="tel:+79051894760">+7 905 189 47 60</a>
         </div>
+        <h1 class="header__title">Московское телевидение</h1>
+        <p class="header__text">Спутниковое и цифровое телевидение в Москве и Московской области</p>
+        <button class="button header__button">Выбрать тариф</button>
     </header>
     <main class="main page__main">
-        <article class="satellite" id="satellite">satellite</article>
-        <article class="digital" id="digital">digital</article>
-        <article class="service" id="service">service</article>
+        <article class="satellite scroll" id="satellite">satellite</article>
+        <article class="digital scroll" id="digital">digital</article>
+        <article class="service scroll" id="service">service</article>
     </main>
-    <footer class="footer" id="footer">footer</footer>
-    
-    <script src="scripts/jquery.min.js"></script>
-    <script src="scripts/parallax.min.js"></script>
+    <footer class="footer scroll" id="footer">footer</footer>
+    <div class="popup"></div>
+    <!-- <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/parallax.min.js"></script> -->
     <script src="scripts/scripts.js"></script>
 </body>
 </html>

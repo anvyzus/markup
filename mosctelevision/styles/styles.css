@@ -16,10 +16,13 @@ main {
 
 /*Header*/
 .header {
-    background-color: blueviolet;
-    height: 500px;
-
-    padding: 0 120px 120px;
+    background-image: url(../images/header-background.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+    line-height: 1.25;
+    padding: 150px 120px 120px;
 }
 .header__inner-wrapper {
     align-items: center;
@@ -32,6 +35,7 @@ main {
     padding: 0 120px;
     position: fixed;
     right: 0;
+    top: 0;
     /* transition: background-color 0.3s; */
     z-index: 1;
 }
@@ -71,7 +75,6 @@ main {
 .menu__item {
     align-items: center;
     display: flex;
-    /* height: 64px; */
     margin-right: 25px;
     text-transform: uppercase;
 }
@@ -109,9 +112,42 @@ main {
     opacity: 1;
 }
 
+.header__title {
+    background-image: url("../images/logo-white.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 140px 140px;
+    font-size: 70px;
+    font-weight: 700;
+    margin: 0;
+    max-width: 590px;
+    padding-left: 160px;
+}
+.header__text {
+    font-size: 33px;
+    font-weight: 300;
+    margin: 50px 0;
+    max-width: 600px;
+}
+.header__button {
+    background-color: #ED2F2F;
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 16pt;
+    margin: 10px 0;
+    padding: 14px 30px;
+    transition: 0.3s;
+}
+.header__button:hover {
+    background-color: #FE3F3F;
+}
+.header__button:active {
+    background-color: #DC1E1E;
+}
+
 @media only screen and (max-width: 1366px) {
     .header {
-        padding: 0 60px 120px;
+        padding: 130px 60px 100px;
     }
     .header__inner-wrapper {
         padding: 0 60px;
@@ -119,7 +155,7 @@ main {
 }
 @media only screen and (max-width: 1024px) {
     .header {
-        padding: 0 40px 100px;
+        padding: 110px 40px 80px;
     }
     .header__inner-wrapper {
         padding: 0 40px;
@@ -129,12 +165,16 @@ main {
     }
 }
 @media only screen and (max-width: 768px) {
-
     .header {
-        padding: 0 20px 80px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 110px 20px 80px;
+        position: relative;
     }
     .header__inner-wrapper {
         padding: 0 20px;
+        
     }
     .header__inner-wrapper {
         background-color: #333;
@@ -152,7 +192,7 @@ main {
         position: fixed;
         top: 64px;
         transform: translateX(-100%);
-        width: 100%;
+        width: auto;
     }
     .header__menu--active {
         transform: translateX(0%);
@@ -169,16 +209,28 @@ main {
     .menu__item:last-of-type {
         border-bottom: none;
     }
-
-
     .menu__link {
         opacity: 1;
     }
-    .menu__link:active {
-        color: coral;
-    }
     .header__link {
         opacity: 1;
+    }
+    .header__title {
+        background-image: url("../images/logo-white.svg");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: 140px 140px;
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0;
+        max-width: 590px;
+        padding: 150px 0 0;
+        text-align: center;
+    }
+    .header__text {
+        font-size: 23px;
+        margin: 30px 0;
+        text-align: center;
     }
 }
 
@@ -188,4 +240,27 @@ article {
 }
 .footer {
     height: 300px;
+}
+
+/*Popup*/
+.popup {
+    background-color: black;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    transition: 0.3s;
+    visibility: hidden;
+    width: 100%;
+}
+.popup--active {
+    opacity: 0;
+    visibility: hidden;
+}
+@media only screen and (max-width: 768px) {
+    .popup--active {
+        opacity: 0.37;
+        visibility: visible;
+    }
 }
