@@ -10,6 +10,11 @@ body {
 main {
     display: block;
 }
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px;
+}
 * {
     box-sizing: inherit;
 }
@@ -17,9 +22,7 @@ main {
 /*Header*/
 .header {
     background-image: radial-gradient(ellipse farthest-side at 100% 100%, #1cafc6 20%, #007fb2 50%, #012690 110%);
-    
-    /* padding: 210px 0 320px 0; fix it!!! */
-    padding: 0 0 320px;
+    padding: 160px 0 370px 0; /*50*/
 }
 .menu {
     display: block;
@@ -34,9 +37,8 @@ main {
 .menu__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1140px;
+    max-width: auto;
+    width: 1160px;
 }
 .menu__logo {
     background-image: url("../images/logotype-white.svg");
@@ -75,13 +77,37 @@ main {
     outline: none;
     padding: 27px 10px 27px 13px;
 }
+.header__title {
+    color: #FFF;
+    font-size: 44px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+}
+.header__text {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 22px;
+    margin: 0 0 20px;
+    max-width: 550px;
+}
 
 @media (max-width: 1160px) {
+    .header__wrapper {
+        padding: 0 15px;
+    }
     .menu__wrapper {
         padding: 0 10px;
     }
 }
 @media (max-width: 1024px) {
+    .header {
+        padding: 120px 0 240px 0;
+    }
+    .header__wrapper {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
     .menu {
         background-color: #24292E !important;
     }
@@ -99,7 +125,6 @@ main {
         height: 100vh;
         margin-top: 53px;
         max-height: 0;
-        /* opacity: 0.95; */
         overflow: hidden;
         padding: 0;
         transition: max-height 0.3s;
@@ -111,7 +136,6 @@ main {
     .menu__link {
         color: #000;
         text-align: center;
-        /* border-bottom: 1px solid rgba(0, 0, 0, 0.05); */
     }
     .menu__link:hover {
         background-color: rgba(0, 0, 0, 0.05);
@@ -160,6 +184,20 @@ main {
     }
     .menu .menu__button.open span::after {
         transform: translateY(-3px) rotate(-45deg);
+    }
+    .header__title {
+        text-align: center;
+    }
+    .header__text {
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        padding: 100px 0 230px 0;
+    }
+    .header__title {
+        font-size: 32px;
     }
 }
 @media (max-width: 425px) {
