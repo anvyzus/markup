@@ -6,6 +6,10 @@ let menuList = document.querySelector('.menu__list');
 let scrollPosition = 0;
 
 console.log('Hi');
+scrollPosition = window.scrollY;
+if (scrollPosition > 100) {
+    menu.style.background = '#24292E';
+}
 
 menuButton.addEventListener('click', () => {
     menuButton.classList.toggle('open'); 
