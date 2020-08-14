@@ -5,6 +5,8 @@ let menuButton = document.querySelector('.menu__button');
 let menuList = document.querySelector('.menu__list');
 let scrollPosition = 0;
 
+console.log('Hi');
+
 menuButton.addEventListener('click', () => {
     menuButton.classList.toggle('open'); 
     menuList.classList.toggle('show');
