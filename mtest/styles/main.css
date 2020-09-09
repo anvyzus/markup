@@ -74,7 +74,6 @@ main {
 }
 .menu__link:hover {
     background-color: rgba(255, 255, 255, 0.1);
-
 }
 .menu__button {
     background-color: transparent;
@@ -267,8 +266,52 @@ main {
 
 
 .main {
-    height: 1000px;
+    height: 800px;
 }
 body {
     background-color: #F2F7FB;
+}
+
+/*Footer*/
+.footer {
+    background-color: #24292E;
+    font-size: 14px;
+    padding: 50px 0;
+}
+.footer__wrapper {
+    /* border-left: 1px solid #FFF; */
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px 0 10px 40px; */
+}
+.footer__text {
+    align-self: start;
+    background-position: left  center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    color: #FFF;
+    margin: 10px 0;
+    line-height: 20px;
+    padding-left: 30px;
+}
+.footer__text-time {
+    background-image: url("../images/clock-white.svg");
+    margin-top: 0;
+}
+.footer__text-phone {
+    background-image: url("../images/phone-white.svg");
+    text-decoration: none;
+}
+.footer__text-home {
+    background-image: url("../images/home-white.svg");
+}
+.footer__text-copyright {
+    background-image: url("../images/logotype-white.svg");
+    margin-bottom: 0;
+}
+
+@media (max-width: 1160px) {
+    .footer__wrapper {
+        padding: 0 15px;
+    }
 }
