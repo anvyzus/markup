@@ -262,15 +262,24 @@ main {
         padding: 27px 20px 27px 37px;
     }
 }
-
-
-
-.main {
+/* ччччччччччччччччччччччччччччччччччччччччччччччччччччччччччччччччч*/
+.satellite {
     height: 800px;
-}
-body {
     background-color: #F2F7FB;
 }
+.digital {
+    background-image: radial-gradient(ellipse farthest-side at 100% 100%, #97c9d5 5%, #1b5494 60%, #1f2e5a 120%);
+    height: 800px;
+}
+.service {
+    height: 800px;
+}
+.form {
+    background-image: radial-gradient(ellipse farthest-side at 100% 100%, #ffb29b 10%, #e56699 30%, #341e7e 109%);
+    height: 800px;
+}
+
+/* ччччччччччччччччччччччччччччччччччччччччччччччччччччччччччччччччч*/
 
 /*Footer*/
 .footer {
