@@ -9,21 +9,21 @@ let scrollPosition = 0;
 scrollPosition = window.scrollY;
 
 if (scrollPosition > 100) {
-    menu.style.background = '#24292E';
+  menu.style.background = '#24292E';
 }
 /*End*/
 
 menuButton.addEventListener('click', () => {
-    menuButton.classList.toggle('open'); 
-    menuList.classList.toggle('show');
+  menuButton.classList.toggle('open'); 
+  menuList.classList.toggle('show');
 });
 
 window.addEventListener('scroll', () => {
-    scrollPosition = window.scrollY;
+  scrollPosition = window.scrollY;
 
-    if (scrollPosition > 100) {
-        menu.style.background = '#24292E';
-    } else {
-        menu.style.background = 'transparent';
-    }
+  if (scrollPosition > 100) {
+    menu.style.background = '#24292E';
+  } else {
+    menu.style.background = 'transparent';
+  }
 });
