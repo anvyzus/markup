@@ -26,12 +26,12 @@
   height: 200vh;
 }
 
-
 /*Header*/
 .menu {
   background-color: #2E2E2E;
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 .menu__wrapper {
   display: flex;
@@ -44,6 +44,17 @@
   background-repeat: no-repeat;
   background-size: 72px;
   padding: 25px 46px;
+}
+.menu__popup {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 50px;
+  transition-duration: 300ms;
+  transition-property: background-color, visibility;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  visibility: hidden;
 }
 .menu__list {
   display: flex;
@@ -70,114 +81,49 @@
 .menu__button {
   display: none;
 }
-
-.menu__button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-/* .menu__list {
-  transition: transform ease-in-out 0s;
-} */
 @media (max-width: 768px) {
-  /* .menu__list {
+  .menu__popup--visible {
+    background-color: rgba(0,0,0,.6);
+    visibility: visible;
+  }
+  .menu__list {
     align-items: flex-end;
     background-color: #FFF;
     flex-direction: column;
     height: 100vh;
-    margin-top: 51px;
-
-    max-height: 0;
-
+    margin-top: 50px;
     overflow: hidden;
     padding: 0;
     position: absolute;
     right: 0;
     top: 0px;
-    transition: max-height 0.3s;
-    transition: width 0.3s;
-
-    width: 100%;
-
-    width: 0;
+    transform: translateX(100%);
   }
-  .menu__list.show {
-    max-height: 100vh;
-    width: auto;
-    width: 200px;
+  .menu__list--shown {
+    transform: translateX(0%);
   }
   .menu__link {
     color: #000;
+    min-width: 200px;
     text-align: center;
   }
   .menu__link:hover {
     background-color: rgba(0, 0, 0, 0.05);
-  } */
-  /* .menu__list {
-    transform: translateX(500%);
-  } */
-  .menu__list {
-    align-items: flex-end;
-    background-color: coral;
-    flex-direction: column;
-    height: 100vh;
-    margin-top: 50px;
-    /* max-height: 0; */
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    right: 0;
-    top: 0px;
-    /* transition: max-height 0.2s;
-    transition: width 0.2s; */
-
-    /* width: 100%; */
-
-    /* width: 0; */
-
-    /* max-height: 100vh; */
-    /* max-height: 0; */
-    transform: translateX(100%);
-    /* transition: transform 0s 0.2s ; */
-    /* transition: transform ease-in-out 0.2s; */
-    /* transition: transform ease-in-out 0.0s; */
   }
-  .menu__list--shown {
-    transform: translateX(0%);
-  }
-  /* .menu .menu__list.menu__list--shown {
-    transform: translateX(0%);
-  } */
-  /* .menu .menu__list.menu__list--shown {
-    transform: translateX(0%);
-    transition: transform ease-in-out 0.0s, max-height 0.0s;
-  } */
-  .menu__list--shown {
-    /* transition: translateX ease-in-out 0.2s; */
-    /* transform: translateX(0%); */
-    /* max-height: 100vh; */
-    /* width: auto;
-    width: 200px; */
-  }
-  .menu__link {
-    color: #000;
-    /* text-align: center; */
-  }
-  .menu__link:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-  }
-
-
   .menu__button {
     align-self: center;
     display: block;
     height: 50px;
     padding: 0 10px;
   }
+  .menu__button--activated {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
   .menu__button-line {
     background-color: #FFF;
     display: block;
     height: 3px;
-    transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.3s;
     width: 30px;
   }
   .menu__button.menu__button--activated .menu__button-line--hiden {
@@ -201,125 +147,4 @@
   .menu .menu__button.menu__button--activated .menu__button-line:last-child {
     transform: translateY(-4px) rotate(-45deg);
   }
-  
-  /* .menu .menu__button span,
-  .menu .menu__button span::before,
-  .menu .menu__button span::after {
-    background-color: #FFF;
-    content: "";
-    display: block;
-    height: 3px;
-    transition: all ease-in-out 0.3s;
-    width: 30px;
-  }
-
-  .menu__button-line:first-child {
-    content: "1";
-    height: 5px;
-    width: 5px;
-    background-color: red;
-  }
-  .menu__button-line:last-child {
-    content: "1";
-    height: 5px;
-    width: 5px;
-    background-color: blue;
-  } */
 }
-
-/* @media (max-width: 768px) {
-  .menu__list {
-    align-items: flex-end;
-    background-color: #FFF;
-    flex-direction: column;
-    height: 100vh;
-    margin-top: 51px;
-
-    max-height: 0;
-
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    right: 0;
-    top: 0px;
-    transition: max-height 0.3s;
-    transition: width 0.3s;
-
-    width: 100%;
-
-    width: 0;
-  }
-  .menu__list.show {
-    max-height: 100vh;
-    width: auto;
-    width: 200px;
-  }
-  .menu__link {
-    color: #000;
-    text-align: center;
-  }
-  .menu__link:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-  }
-
-
-
-
-
-
-  .menu__button {
-    align-self: center;
-    display: block;
-    height: 20px;
-  }
-  .menu .menu__button span,
-  .menu .menu__button span::before,
-  .menu .menu__button span::after {
-    background-color: #FFF;
-    content: "";
-    display: block;
-    height: 3px;
-    transition: all ease-in-out 0.3s;
-    width: 30px;
-  }
-  .menu .menu__button.open span {
-    transition: all ease-in-out 0.05s;
-  }
-  .menu .menu__button span {
-    transform: translateY(-1px);
-  }
-  .menu .menu__button span::before {
-    transform: translateY(-7px);
-  }
-  .menu .menu__button span::after {
-    transform: translateY(4px);
-  }
-  .menu .menu__button span {
-    transform: translateY(-1px);
-  }
-  .menu .menu__button span::before {
-    transform: translateY(-7px);
-  }
-  .menu .menu__button span::after {
-    transform: translateY(4px);
-  }
-  .menu .menu__button.open span {
-    background-color: transparent;
-  }
-  .menu .menu__button.open span::before {
-    transform: translateY(0px) rotate(45deg);
-  }
-  .menu .menu__button.open span::after {
-    transform: translateY(-3px) rotate(-45deg);
-  }
-} */
-
-  /* .menu__button .menu__button-line--hiden {
-    transform: translateY(-1px);
-  } */
-  /* .menu .menu__button .menu__button-line:first-child {
-    transform: translateY(-7px);
-  }
-  .menu .menu__button .menu__button-line:last-child {
-    transform: translateY(4px);
-  } */
