@@ -116,8 +116,8 @@
 }
 .header__button {
   align-self: center;
-  color: rgba(255, 255, 255, 0.85);
   background-color: #FF6A3E;
+  color: rgba(255, 255, 255, 0.85);
   font-size: 13px;
   font-weight: 600;
   line-height: 1.5;
@@ -125,12 +125,26 @@
   padding: 14px 40px;
   text-transform: uppercase;
   transition: color, background-color 0.3s ease-in;
+  width: 240px;
 }
 .header__button:hover {
   background-color: #EF5A42;
 }
 .header__phone {
+  align-self: center;
+  background-color: #FFF;
+  color: rgba(255, 106, 0.85);
   display: none;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 20px 0 0 0;
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: none ;
+  text-transform: uppercase;
+  transition: color, background-color 0.3s ease-in;
+  width: 240px;
 }
 @media (max-width: 1367px) {
   .header__title {
@@ -207,11 +221,17 @@
   .menu .menu__button.menu__button--activated .menu__button-line:last-child {
     transform: translateY(-4px) rotate(-45deg);
   }
+  .header__wrapper {
+    padding: 180px 15px 100px;
+  }
   .header__title {
     font-size: 28px;
   }
   .header__text {
     font-size: 20px;
+  }
+  .header__phone {
+    display: block;
   }
 }
 @media (max-width: 425px) {
@@ -220,14 +240,13 @@
   }
   .header__button {
     align-self: auto;
-    color: rgba(255, 255, 255, 0.85);
-    background-color: #FF6A3E;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 1.5;
-    margin: 100px 0 0 0;
-    padding: 14px 40px;
-    text-transform: uppercase;
-    transition: color, background-color 0.3s ease-in;
+    width: auto;
+  }
+  .header__phone {
+    align-self: auto;
+    width: auto;
   }
 }
+/* .main {
+  
+} */
