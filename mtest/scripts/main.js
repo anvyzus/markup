@@ -12,13 +12,11 @@ function showMenu() {
   }
 }
 function navbarLinkClick(event) {
-  smoothScroll(event); // Call the "smoothScroll" function
-  // showMenu();
+  smoothScroll(event);
 
-  if (menuButton.classList.contains('menu__button--activated')) { // Close navbarMenu in smaller screens
+  if (menuButton.classList.contains('menu__button--activated')) {
     showMenu();
   }
-
 }
 
 function smoothScroll(event) {
@@ -28,7 +26,7 @@ function smoothScroll(event) {
   let targetPosition = document.querySelector(targetId).offsetTop;
   let startPosition = window.pageYOffset;
   let distance = targetPosition - startPosition;
-  let duration = 700;
+  let duration = 400;
   let start = null;
   
   window.requestAnimationFrame(step);
