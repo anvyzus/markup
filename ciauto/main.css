@@ -13,3 +13,8 @@
 .red {
   background-color: red;
 }
+.elem {
+  background-color: crimson;
+  color: #FFF;
+  padding: 50px;
+}
