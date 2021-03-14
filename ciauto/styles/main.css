@@ -48,7 +48,7 @@
   position: fixed;
   right: 0;
   top: 50px;
-  transition-duration: 300ms;
+  transition-duration: 200ms;
   transition-property: background-color, visibility;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   visibility: hidden;
@@ -93,7 +93,7 @@
     position: absolute;
     right: -160px;
     top: 0px;
-    transition: right 0.3s ease-in-out;
+    transition: right 0.2s ease-in-out;
   }
   .menu__list--opened {
     right: 0;
