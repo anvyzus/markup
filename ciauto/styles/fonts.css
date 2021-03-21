@@ -1,24 +1,18 @@
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Manrope";
   font-style: normal; 
   font-weight: 400; 
-  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  src: url("../fonts/Manrope-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Manrope";
   font-style: normal; 
   font-weight: 600; 
-  src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+  src: url("../fonts/Manrope-SemiBold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Manrope";
   font-style: normal; 
   font-weight: 700; 
-  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Racing Sans One";
-  font-style: normal; 
-  font-weight: 400; 
-  src: url("../fonts/RacingSansOne-Regular.ttf") format("truetype");
+  src: url("../fonts/Manrope-Bold.ttf") format("truetype");
 }
