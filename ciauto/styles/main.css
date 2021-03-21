@@ -188,3 +188,8 @@
     text-align: center;
   }
 }
+@media (max-width: 375px) {
+  .header__wrapper {
+    padding: 120px 10px 100px;
+  }
+}
