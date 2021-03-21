@@ -53,7 +53,7 @@
   font-size: 14px;
   font-weight: 600;
   height: 50px;
-  padding: 16px 10px 17px;
+  padding: 15px 10px 16px;
   text-decoration: none;
   text-transform: uppercase;
   transition: background-color 0.2s ease-in-out;
@@ -76,7 +76,64 @@
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   visibility: hidden;
 }
+.header {
+  background-image: url("../images/header-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+  padding: 120px 15px 500px;
+}
+.header__title {
+  color: #002A51;
+  font-size: 36px;
+}
+.header__text {
+  color: #002A51;
+  font-size: 24px;
+  max-width: 300px;
+}
+.header__button {
+  align-items: flex-start;
+  background-color: #002A51;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.85);
+
+  /* margin: 100px 0 0 0; */
+  padding: 14px 40px;
+  max-width: 200px;
+
+  text-align: center;
+  text-decoration: none;
+}
+@media (max-width: 1367px) {
+  .header__wrapper {
+    padding: 70px 15px 400px;
+  }
+  .header__title {
+    font-size: 32px;
+  }
+  .header__text {
+    font-size: 22px;
+    margin-top: 0;
+  }
+}
 @media (max-width: 768px) {
+  .header__title {
+    font-size: 28px;
+  }
+  .header__text {
+    font-size: 20px;
+    /* max-width: 320px; */
+  }
+  .header__button {
+    margin-top: 50px;
+  }
   .menu {
     background-color: #FFF;
     /* position: fixed;
@@ -99,13 +156,12 @@
     right: 0;
   }
   .menu__link {
-    color: #000;
     min-width: 160px;
     text-align: center;
     transition: background-color 0s ease-in-out;
   }
   .menu__link:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 42, 81, 0.05);
   }
   .menu__button {
     background-image: url("../images/menu-button-closed.svg");
@@ -116,11 +172,19 @@
     width: 50px;
   }
   .menu__button--opened {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 42, 81, 0.05);
     background-image: url("../images/menu-button-opened.svg");
   }
   .menu__background--visible {
     background-color: rgba(0, 0, 0, 0.6);
     visibility: visible;
+  }
+}
+@media (max-width: 425px) {
+  .header__wrapper {
+    padding: 120px 15px 350px;
+  }
+  .header__title {
+    text-align: center;
   }
 }
