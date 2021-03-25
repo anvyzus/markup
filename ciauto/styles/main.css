@@ -45,6 +45,9 @@
 .page {
   margin: 0;
 }
+.title {
+  color: #002A51;
+}
 .wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -56,6 +59,7 @@
   background-color: #FFF;
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 .menu__wrapper {
   display: flex;
@@ -228,11 +232,74 @@
   background-color: #FFF;
   height: 50vh;
 }
+/*Services*/
+.services {
+  background-color: #FFF;
+}
+.services__wrapper {
+  padding: 50px 15px;
+}
+.services__sub-title {
+  color: #002A51;
+  font-size: 18px;
+}
+.services__inner-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  height: 200px;
+  margin: 5px 0;
+  width: 350px;
+}
+.card-01 {
+  background-image: url("../images/catalisator-01.jpg");
+}
+.card-02 {
+  background-image: url("../images/catalisator-02.jpg");
+  background-position: center;
+}
+.card-03 {
+  background-image: url("../images/catalisator-03.jpg");
+}
+.card__background {
+  background: rgba(9, 8, 5, 0.65);
+  border-radius: 10px;
+  height: 100%;
+  position: relative;
+}
+.card__text {
+  color: #FFF;
+  display: block;
+  font-weight: 600;
+  margin: 0 auto;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+@media (max-width: 900px) {
+}
+@media (max-width: 768px) {
+  .card {
+    margin: 5px auto;
+  }
+}
+@media (max-width: 425px) {
+}
 /*Contact*/
 .contact__wrapper {
   padding: 50px 15px;
 }
+.contact__text {
+  color: #002A51;
+}
 .form {
+  color: #002A51;
   border: 1px solid #E6E6E6;
   border-radius: 10px;
   display: flex;
@@ -246,9 +313,11 @@
   box-shadow: 0px 1px 2px 0px rgb(60 64 67 / 30%), 0px 2px 6px 2px rgb(60 64 67 / 15%);
 }
 .form__lable {
+  color: #002A51;
   margin: 25px 0 15px;
 }
 .form__input {
+  color: #002A51;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
   height: 30px;
@@ -268,7 +337,6 @@
   transition: color, background-color 0.3s ease-in;
   width: 240px;
 }
-
 @media (max-width: 425px) {
   .form__input {
     width: 100%;
