@@ -299,6 +299,9 @@
   }
 }
 @media (max-width: 425px) {
+  .facts__wrapper {
+    align-items: flex-start;
+  }
   .facts__title {
     text-align: start;
   }
@@ -356,14 +359,10 @@
   bottom: 15px;
   left: 15px;
 }
-@media (max-width: 900px) {
-}
 @media (max-width: 768px) {
   .card {
     margin: 5px auto;
   }
-}
-@media (max-width: 425px) {
 }
 /*Why*/
 .why {
