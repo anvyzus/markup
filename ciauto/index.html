@@ -21,17 +21,17 @@
   <header class="header">
     <nav class="menu">
       <article class="wrapper menu__wrapper">
-        <a class="menu__logo" href="#">CiAuto</a>
+        <a class="menu__logo" href="index.html">CiAuto</a>
         <section class="menu__background"></section>
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link" href="#">О нас</a>
+            <a class="menu__link" href="#about">О нас</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Услуги</a>
+            <a class="menu__link" href="#services">Услуги</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Контакты</a>
+            <a class="menu__link" href="#contact">Контакты</a>
           </li>
         </ul>
         <button class="button menu__button"></button>
@@ -40,14 +40,37 @@
     <article class="wrapper header__wrapper">
       <h1 class="header__title">Выкуп авто в Москве и Московской области</h1>
       <p class="header__text">Выкупим ваш автомобиль с диагностикой и переоформлением документов всего за 3 часа</p>
-      <a class="link-button header__link-button" href="#">Продать авто</a>
+      <a class="link-button header__link-button header__link-button--top" href="#contact">Продать авто</a>
       <a class="link-button header__link-button header__link-button--bottom" href="tel:+79051234567">+7 905 123 45 67</a>
     </article>
   </header>
   <main class="main">
-    <article class="about">
-      <section class="wrapper about__wrapper">
-        
+    <article class="facts main__facts" id="about">
+      <section class="wrapper facts__wrapper">
+        <div class="facts__item">
+          <h3 class="facts__title">01</h3>
+          <p class="facts__text">Компания работает с 2014 года.</p>
+        </div>
+        <div class="facts__item">
+          <h3 class="facts__title">02</h3>
+          <p class="facts__text">Более 1,000 успешных сделок, по автомобилям</p>
+        </div>
+        <div class="facts__item">
+          <h3 class="facts__title">03</h3>
+          <p class="facts__text">Самая точный, быстрый и эффективный анализ авто</p>
+        </div>
+        <div class="facts__item">
+          <h3 class="facts__title">04</h3>
+          <p class="facts__text">Самый лучший обслуживающий персонал и менеджеры</p>
+        </div>
+        <div class="facts__item">
+          <h3 class="facts__title">05</h3>
+          <p class="facts__text">Расчет сразу после анализа, наличными или на карту</p>
+        </div>
+        <div class="facts__item">
+          <h3 class="facts__title">06</h3>
+          <p class="facts__text">Индивидуальная работа с каждым клиентом</p>
+        </div>
       </section>
     </article>
     <article class="services" id="services">
@@ -73,6 +96,33 @@
         </div>
       </section>
     </article>
+    <article class="why main__why">
+      <div class="wrapper why__wrapper">
+        <h2 class="title why__title">Почему стоит выбрать нас:</h2>
+        <div class="why__inner-wrapper">
+          <div class="why__item">
+            <img alt="icon" class="why__image" src="images/ico-01.svg" />
+            <p class="why__text">ПРОФЕССИОНАЛЬНАЯ КОМАНДА</p>
+          </div>
+          <div class="why__item">
+            <img alt="icon" class="why__image" src="images/ico-02.svg" />
+            <p class="why__text">ИНДИВИДУАЛЬНЫЙ ПОДХОД К КЛИЕНТУ</p>
+          </div>
+          <div class="why__item">
+            <img alt="icon" class="why__image" src="images/ico-03.svg" />
+            <p class="why__text">ВЫСОКИЙ УРОВЕНЬ ОБСЛУЖИВАНИЯ</p>
+          </div>
+          <div class="why__item">
+            <img alt="icon" class="why__image" src="images/ico-04.svg" />
+            <p class="why__text">БЫСТРЫЕ СРОКИ ОЦЕНКИ И РАСЧЕТА ЗА КАТАЛИЗАТОР</p>
+          </div>
+          <div class="why__item">
+            <img alt="icon" class="why__image" src="images/ico-05.svg" />
+            <p class="why__text">СИСТЕМА СКИДОК ДЛЯ ПОСТОЯННЫХ КЛИЕНТОВ</p>
+          </div>
+        </div>
+      </div>
+    </article>
     <article class="contact" id="contact">
       <section class="wrapper contact__wrapper">
         <h2 class="title contact__title">Остались вопросы?</h2>
@@ -82,7 +132,8 @@
           <input class="form__input" type="text">
           <label class="form__lable" for="">Телефон:</label>
           <input class="form__input" type="text">
-          <button class="button contact__button" type="submit">Отправить</button>
+          <a class="button contact__button" href="index.html">Отправить</a>
+          <!-- <button class="button contact__button" type="submit">Отправить</button> -->
         </form>
       </section>
     </article>
