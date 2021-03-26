@@ -262,7 +262,6 @@
 }
 .facts__title {
   color: #002a5110;
-  /* color: #E6E6E6; */
   font-size: 160px;
   padding: 0;
   margin: 0;
@@ -273,7 +272,6 @@
   font-weight: 700;
   padding: 0;
   margin: 0;
-  /* text-transform: uppercase; */
 }
 @media (max-width: 900px) {
   .facts__wrapper {
