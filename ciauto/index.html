@@ -129,10 +129,11 @@
         <p class="contact__text">Свяжитесь с нами, или оставьте заяву и наш менеджер вам перезвонит:</p>
         <form action="main.php" class="form">
           <label class="form__lable" for="">Ваше имя:</label>
-          <input class="form__input" type="text">
+          <input class="form__input" name="userName" placeholder="Например, Иван" type="text">
           <label class="form__lable" for="">Телефон:</label>
-          <input class="form__input" type="text">
-          <a class="button contact__button" href="index.html">Отправить</a>
+          <input class="form__input" name="userPhone" placeholder="+7 999 111 22 33"  type="text">
+          <!-- <a class="button contact__button" href="index.html">Отправить</a> -->
+          <button class="button contact__button" type="submit">Отправить</button>
         </form>
       </section>
     </article>
