@@ -1,19 +1,18 @@
 <?php
-
-$name = $_POST['user_name'];
-$phone = $_POST['user_phone'];
+$userName = $_POST['userName'];
+$userPhone = $_POST['userPhone'];
 $token = "1137134607:AAEeEw5GMRAhlWlruwLcslSSiiPbXeHcrao";
-$chat_id = "-499716502";
+$chatId = "-499716502";
 $arr = array(
-  'Имя пользователя: ' => $name,
-  'Телефон: ' => $phone,
+  'Имя пользователя: ' => $userName,
+  'Телефон: ' => $userPhone,
 );
 
 foreach($arr as $key => $value) {
   $txt .= "<b>".$key."</b> ".$value."%0A";
 };
 
-$sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
+$sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chatId}&parse_mode=html&text={$txt}","r");
 
 if ($sendToTelegram) {
   header('Location: index.html');
