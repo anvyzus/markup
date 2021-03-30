@@ -3,19 +3,19 @@
   font-family: "Manrope";
   font-style: normal; 
   font-weight: 400; 
-  src: url("../fonts/Manrope-Regular.ttf") format("truetype");
+  src: url("fonts/Manrope-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Manrope";
   font-style: normal; 
   font-weight: 600; 
-  src: url("../fonts/Manrope-SemiBold.ttf") format("truetype");
+  src: url("fonts/Manrope-SemiBold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Manrope";
   font-style: normal; 
   font-weight: 700; 
-  src: url("../fonts/Manrope-Bold.ttf") format("truetype");
+  src: url("fonts/Manrope-Bold.ttf") format("truetype");
 }
 /*Normalize*/
 * {
@@ -92,7 +92,7 @@
   background-color: rgba(0, 42, 81, 0.05);
 }
 .menu__button {
-  background-image: url("../images/menu-button-closed.svg");
+  background-image: url("images/menu-button-closed.svg");
   background-position: 10px;
   background-repeat: no-repeat;
   display: none;
@@ -111,7 +111,7 @@
   visibility: hidden;
 }
 .header {
-  background-image: url("../images/header-background.jpg");
+  background-image: url("images/header-background.jpg");
   background-position: center bottom -70px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -185,7 +185,7 @@
   }
   .menu__button--opened {
     background-color: rgba(0, 42, 81, 0.05);
-    background-image: url("../images/menu-button-opened.svg");
+    background-image: url("images/menu-button-opened.svg");
   }
   .menu__background--visible {
     background-color: rgba(0, 0, 0, 0.6);
@@ -332,14 +332,14 @@
   width: 350px;
 }
 .card-01 {
-  background-image: url("../images/catalisator-01.jpg");
+  background-image: url("images/catalisator-01.jpg");
 }
 .card-02 {
-  background-image: url("../images/catalisator-02.jpg");
+  background-image: url("images/catalisator-02.jpg");
   background-position: center;
 }
 .card-03 {
-  background-image: url("../images/catalisator-03.jpg");
+  background-image: url("images/catalisator-03.jpg");
 }
 .card__background {
   background: rgba(9, 8, 5, 0.65);
@@ -478,17 +478,17 @@
   padding-left: 30px;
 }
 .footer__text-time {
-  background-image: url("../images/clock-blue.svg");
+  background-image: url("images/clock-blue.svg");
   margin-top: 0;
 }
 .footer__text-phone {
-  background-image: url("../images/phone-blue.svg");
+  background-image: url("images/phone-blue.svg");
   text-decoration: none;
 }
 .footer__text-home {
-  background-image: url("../images/home-blue.svg");
+  background-image: url("images/home-blue.svg");
 }
 .footer__text-copyright {
-  background-image: url("../images/logo-blue.svg");
+  background-image: url("images/logo-blue.svg");
   margin-bottom: 0;
 }
