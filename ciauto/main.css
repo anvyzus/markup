@@ -440,7 +440,6 @@
   padding: 14px 40px;
   text-align: center;
   text-decoration: none;
-  /* text-transform: uppercase; */
   transition: color, background-color 0.3s ease-in;
   width: 240px;
 }
