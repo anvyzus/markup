@@ -206,7 +206,7 @@
     visibility: visible;
   }
   .header {
-    padding: 180px 0 100px;
+    padding: 175px 0 100px;
   }
   .header__title {
     font-size: 30px;
@@ -218,7 +218,7 @@
   .header__link {
     background-color: #FF6A3E;
     color: #FFF;
-    margin: 100px 0 0;
+    margin: 95px 0 0;
   }
   .header__link:hover {
     background-color: #FF6A3E;
