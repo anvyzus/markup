@@ -107,20 +107,65 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 200px 0; /**/
+  padding: 200px 0 120px;
+}
+.header__wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 .header__title {
   color: #FFF;
+  font-size: 38px;
+  margin: 0;
+  text-align: center;
+}
+.header__text {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 26px;
+  margin: 30px 0 0;
+  text-align: center;
+}
+.header__link {
+  background-color: #FF6A3E;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 120px 0 0;
+  padding: 12px 0;
+  text-align: center;
+  width: 250px;
+}
+.header__link:hover {
+  background-color: #FF7A4E;
+}
+.header__link:active {
+  background-color: #EF5A2E;
+}
+.header__link--background-white {
+  background-color: #FFF;
+  color: #FF6A3E;
+  margin: 15px 0 0;
+}
+.header__link--background-white:hover {
+  background-color: #FFF;
 }
 @media (max-width: 1367px) {
+  .header__title {
+    font-size: 36px;
+  }
+  .header__text {
+    font-size: 24px;
+  }
 }
 @media (max-width: 1024px) {
-  /* .header__title {
+  .header__title {
     font-size: 32px;
   }
   .header__text {
     font-size: 22px;
-  } */
+  }
 }
 @media (max-width: 768px) {
   .menu__list {
@@ -160,39 +205,45 @@
     background-color: rgba(0, 0, 0, 0.6);
     visibility: visible;
   }
-  /*
   .header {
-    background-position: left 60% bottom -30px;
-  }
-  .header__wrapper {
-    padding: 100px 10px 300px;
+    padding: 180px 0 100px;
   }
   .header__title {
     font-size: 30px;
   }
   .header__text {
     font-size: 20px;
-    max-width: 400px;
+    margin: 25px 0 0;
   }
-  .header__link-button--bottom {
-    display: block;
-  } */
+  .header__link {
+    background-color: #FF6A3E;
+    color: #FFF;
+  }
+  .header__link:hover {
+    background-color: #FF6A3E;
+  }
+  .header__link:active {
+    background-color: #FF6A3E;
+  }
+  .header__link--background-white {
+    background-color: #FFF;
+    color: #FF6A3E;
+  }
+  .header__link--background-white:hover {
+    background-color: #FFF;
+    color: #FF6A3E;
+  }
+  .header__link--background-white:active {
+    background-color: #FFF;
+    color: #FF6A3E;
+  }
 }
 @media (max-width: 425px) {
-  /* .header__title {
-    font-size: 28px;
-    text-align: center;
+  .header__link {
+    width: 100%;
   }
-  .header__text {
-    font-size: 18px;
-    max-width: 350px;
-    text-align: center;
-  }
-  .header__link-button {
-    margin: 51px 0 0;
-    max-width: 100%;
-  }
-  .header__link-button--bottom {
-    margin: 10px 0 0;
-  } */
+}
+/*Main*/
+.main {
+  height: 120vh;
 }
