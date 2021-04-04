@@ -218,6 +218,7 @@
   .header__link {
     background-color: #FF6A3E;
     color: #FFF;
+    margin: 100px 0 0;
   }
   .header__link:hover {
     background-color: #FF6A3E;
@@ -228,6 +229,7 @@
   .header__link--background-white {
     background-color: #FFF;
     color: #FF6A3E;
+    margin: 15px 0 0;
   }
   .header__link--background-white:hover {
     background-color: #FFF;
