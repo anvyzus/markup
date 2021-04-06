@@ -589,6 +589,7 @@
 }
 .call__text {
   color: rgba(0, 0, 0, 0.7);
+  font-size: 18px;
 }
 .form {
   align-items: flex-start;
@@ -631,7 +632,7 @@
   margin: 50px 0 20px 0;
   padding: 12px 0;
   text-align: center;
-  /* text-decoration: none; */
+  text-decoration: none;
   transition: color, background-color 0.3s ease-in;
   width: 250px;
 }
@@ -678,4 +679,3 @@
   background-image: url("images/footer-logo.svg");
   margin-bottom: 0;
 }
-/* box-shadow: 0px 15px 12px rgba(0, 0, 0, 0.22), 0px 19px 38px rgba(0, 0, 0, 0.3); */

@@ -23,16 +23,16 @@
         <section class="menu__background"></section>
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="link menu__link" href="#">О нас</a>
+            <a class="link menu__link" href="#about">О нас</a>
           </li>
           <li class="menu__item">
-            <a class="link menu__link" href="#">Услуги</a>
+            <a class="link menu__link" href="#services">Услуги</a>
           </li>
           <li class="menu__item">
-            <a class="link menu__link" href="#">Отзывы</a>
+            <a class="link menu__link" href="#reviews">Отзывы</a>
           </li>
           <li class="menu__item">
-            <a class="link menu__link" href="#">Контакты</a>
+            <a class="link menu__link" href="#contacts">Контакты</a>
           </li>
         </ul>
         <button class="button menu__button"></button>
@@ -41,12 +41,12 @@
     <article class="wrapper header__wrapper">
       <h1 class="header__title">Срочный выкуп катализаторов</h1>
       <p class="header__text">Скупка авто-катализаторов в Москве и Московской области</p>
-      <a class="link header__link" href="#">Продать катализатор</a>
+      <a class="link header__link" href="#call">Продать катализатор</a>
       <a class="link header__link header__link--background-white" href="tel:+79650580404">+7 965 058 04 04</a>
     </article>
   </header>
   <main class="main">
-    <article class="about">
+    <article class="about" id="about">
       <article class="wrapper about__wrapper">
         <h2 class="title about__title">О нас</h2>
         <section class="about__sub-wrapper">
@@ -88,7 +88,7 @@
         </section>
       </article>
     </article>
-    <article class="services">
+    <article class="services" id="services">
       <article class="wrapper services__wrapper">
         <h2 class="title facts__title">Услуги</h2>
         <p class="services__text">Мы принимаем всевозможные:</p>
@@ -111,7 +111,7 @@
         </section>
       </article>
     </article>
-    <article class="reviews">
+    <article class="reviews" id="reviews">
       <article class="wrapper reviews__wrapper">
         <h2 class="title reviews__title">Отзывы</h2>
         <section class="reviews__sub-wrapper">
@@ -173,7 +173,7 @@
         </section>
       </article>
     </article>
-    <article class="contacts">
+    <article class="contacts" id="contacts">
       <article class="wrapper contacts__wrapper">
         <h2 class="title contacts__title">Контакты</h2>
         <section class="contacts__sub-wrapper">
@@ -184,7 +184,7 @@
         </section>
       </article>
     </article>
-    <article class="call">
+    <article class="call" id="call">
       <article class="wrapper call__wrapper">
         <h2 class="title call__title">Есть вопросы?</h2>
         <p class="call__text">Свяжитесь с нами, или оставьте заяву и наш менеджер вам перезвонит:</p>
@@ -193,7 +193,8 @@
           <input class="form__input" name="userName" placeholder="Например, Иван" type="text">
           <label class="form__lable" for="">Телефон:</label>
           <input class="form__input" name="userPhone" placeholder="8 999 111 22 33" type="tel" pattern="[0-9]{11}" required>
-          <button class="button call__button" type="submit">Отправить</button>
+          <a class="button call__button" href="index.html">Отправить</a>
+          <!-- <button class="button call__button" type="submit">Отправить</button> -->
         </form>
       </article>
     </article>
