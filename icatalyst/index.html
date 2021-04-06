@@ -173,8 +173,36 @@
         </section>
       </article>
     </article>
+    <article class="contacts">
+      <article class="wrapper contacts__wrapper">
+        <h2 class="title contacts__title">Контакты</h2>
+        <section class="contacts__sub-wrapper">
+          <p class="contacts__text contacts__text-time">09:00 - 20:00</p>
+          <a class="contacts__text contacts__text-phone" href="tel:+79650580404">+7 965 058 04 04</a>
+          <p class="contacts__text contacts__text-home">Кирова 10А, Сходня</p>
+          <p class="contacts__text contacts__text-home">Заводская 18, Зеленоград</p>
+        </section>
+      </article>
+    </article>
+    <article class="call">
+      <article class="wrapper call__wrapper">
+        <h2 class="title call__title">Есть вопросы?</h2>
+        <p class="call__text">Свяжитесь с нами, или оставьте заяву и наш менеджер вам перезвонит:</p>
+        <form action="main.php" class="form">
+          <label class="form__lable" for="">Ваше имя:</label>
+          <input class="form__input" name="userName" placeholder="Например, Иван" type="text">
+          <label class="form__lable" for="">Телефон:</label>
+          <input class="form__input" name="userPhone" placeholder="8 999 111 22 33" type="tel" pattern="[0-9]{11}" required>
+          <button class="button call__button" type="submit">Отправить</button>
+        </form>
+      </article>
+    </article>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <article class="wrapper footer__wrapper">
+      <p class="footer__text footer__text-copyright">Катализаторы &copy; 2012-2021</p>
+    </article>
+  </footer>
   <script src="main.js"></script>
 </body>
 </html>
