@@ -1,0 +1,27 @@
+.app {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 50px;
+}
+.app__text {
+  color: #002A51;
+  font-size: 20px;
+}
+.app__text--bold {
+  color: #002A51;
+  font-weight: 600;
+}
+.app__button {
+  background-color: #002A51;
+  border: none;
+  border-radius: 5px;
+  color: #FFF;
+  cursor: pointer;
+  display: block;
+  font-weight: 500;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}

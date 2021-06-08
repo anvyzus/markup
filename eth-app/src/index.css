@@ -1,0 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+.page {
+  background-color: #F9F9F9;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+}
