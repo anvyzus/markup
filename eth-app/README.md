@@ -1,3 +1,3 @@
-## Deploy ETH APP
+## ETH APP
 
 https://bolelod.github.io/projects/eth-app/build/index.html
